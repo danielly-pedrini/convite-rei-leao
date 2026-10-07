@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Pequeno Rei Luiz Fernando – 1 aninho</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sky"></div>
+    <video
+      id="bgv"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      aria-hidden="true"
+      src="assets/fundo.mp4"
+    ></video>
+    <div class="shade"></div>
+    <canvas id="fx"></canvas>
+    <div class="land">
+      <svg
+        viewBox="0 0 800 260"
+        preserveAspectRatio="xMidYMax slice"
+        aria-hidden="true"
+      >
+        <path
+          d="M0 260V190q60-30 130-12t120-6q40-4 70 6l20-34 36-22 40-6 20-26 30-6 22 14 32 22 10 28 40 8 60 30 70-10 100 14V260Z"
+          fill="#4a1a22"
+        />
+        <path
+          d="M0 260V215q90-30 190-10t180-4q120-12 200 6t230-8V260Z"
+          fill="#2a0f1a"
+        />
+        <g fill="#2a0f1a">
+          <rect x="662" y="140" width="6" height="64" />
+          <path d="M610 146q50-30 110-6 30-22 60-6-40 14-60 18-50-8-110 0z" />
+          <rect x="92" y="170" width="5" height="50" />
+          <path d="M50 176q40-24 90-4-34 14-90 4z" />
+        </g>
+      </svg>
+    </div>
+
+    <section id="cover">
+      <img class="bgblur" alt="" aria-hidden="true" />
+      <img
+        class="main"
+        src="assets/capa.jpg"
+        alt="Luiz Fernando, o Pequeno Rei"
+      />
+      <div class="fade"></div>
+      <button class="cta" id="open">Abrir convite</button>
+    </section>
+
+    <main id="main">
+      <div class="reveal">
+        <svg class="crown" viewBox="0 0 64 44" style="--i: 0">
+          <path
+            d="M4 38 8 8l14 16L32 4l10 20L56 8l4 30Z"
+            fill="#ffb02e"
+            stroke="#7a2e1d"
+            stroke-width="3"
+            stroke-linejoin="round"
+          />
+          <rect x="4" y="38" width="56" height="5" rx="2" fill="#e8641b" />
+        </svg>
+        <p class="kicker" style="--i: 1">O ciclo da vida celebra</p>
+        <h1 style="--i: 2">Pequeno<br />Rei</h1>
+        <p class="name" style="--i: 4">Luiz Fernando</p>
+        <p class="age" style="--i: 5">Aniversário de 1 aninho</p>
+        <div class="card" style="--i: 6">
+          <div class="when">
+            <div><b>21/11</b><small>sábado</small></div>
+            <div><b>13:00</b><small>horas</small></div>
+          </div>
+          <p class="where">Chácara da Nona</p>
+          <a
+            class="loc"
+            href="https://www.google.com/maps/place/Ch%C3%A1cara+Da+Nona/@-23.1001182,-47.5446977,17z"
+            target="_blank"
+            rel="noopener"
+            >📍 Ver localização</a
+          >
+          <div class="count" id="count" aria-live="off">
+            <div><b id="d">0</b><span>dias</span></div>
+            <div><b id="h">0</b><span>horas</span></div>
+            <div><b id="m">0</b><span>min</span></div>
+            <div><b id="s">0</b><span>seg</span></div>
+          </div>
+        </div>
+        <div class="rsvp" style="--i: 7">
+          <a
+            id="wa"
+            class="wa"
+            href="https://chat.whatsapp.com/L3JKSzcWKXy0A0JHrGcm1y"
+            target="_blank"
+            rel="noopener"
+            ><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+              <path
+                fill="#fff"
+                d="M16 3a13 13 0 0 0-11 19.9L3 29l6.300-2A13 13 0 1 0 16 3Zm0 23.700a10.600 10.600 0 0 1-5.400-1.500l-.400-.200-3.700 1.200 1.200-3.600-.300-.400A10.700 10.700 0 1 1 16 26.700Zm5.800-8c-.3-.200-1.900-.900-2.200-1s-.5-.200-.7.200-.8 1-1 1.200-.4.200-.7 0a8.700 8.700 0 0 1-4.300-3.800c-.3-.600.300-.500.900-1.700.100-.200 0-.400 0-.500l-1-2.300c-.200-.600-.500-.500-.700-.500h-.600a1.200 1.200 0 0 0-.900.400 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.700 14.700 0 0 0 5.600 4.900c2.100.900 2.900 1 3.900.800a3.300 3.300 0 0 0 2.200-1.600 2.700 2.700 0 0 0 .2-1.600c-.100-.100-.300-.200-.600-.400Z"
+              /></svg
+            >Confirmar presença</a
+          >
+        </div>
+        <p class="hakuna" style="--i: 8">
+          Hakuna Matata! Venha celebrar com a gente. 🦁
+        </p>
+      </div>
+    </main>
+
+    <button id="music" class="on" aria-label="Pausar música" title="Música">
+      🔊
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
